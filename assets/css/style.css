@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-family: "Playpen Sans", "Shantell Sans";
+    background-color: #1d1669;
+    color: #7c8892;
+}
+.h1{
+    margin: 10px auto;
+    border-bottom: 1px solid #8080ff;
+    padding: 10px 0;
+}
+.contenedor{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top: 5px;
+    padding: 20px 50px;
+}
+.h2{
+    margin-bottom: 5px;
+}
+#pesos{
+    width: 50%;
+    font-size: 1.2em;
+    margin: 5px auto;
+    text-align: center;
+    border: 1px solid;
+}
+.h4{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#selectMonedas{
+    width: 50%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+#convertir{
+    width: 50%;
+    height: 40px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    
+}
+.button{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+.button:hover{
+    background:#fff;
+    color:#1AAB8A;
+}
+.button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+}
+.button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+#grafico{
+    margin-top: 5px;
+}
